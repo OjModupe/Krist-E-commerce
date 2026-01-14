@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import Brand from "../../assets/brand.png"
-// import { useState } from "react";
+import Brand from "../../assets/brand.png";
+import { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { IoSearchOutline } from "react-icons/io5";
@@ -8,6 +8,7 @@ import { BiLike } from "react-icons/bi";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import Button from "../../Shared/Button";
 import { GiHamburgerMenu } from "react-icons/gi";
+import NavBarModal from "./NavBarModal";
 
 interface NavBarProps {
   name: string;
@@ -15,7 +16,7 @@ interface NavBarProps {
   icon?: ReactElement;
 }
 
-const NavBarComponent = ({setOpenModal}:any) => {
+const NavBarComponent = () => {
   // const [activeRoute, setActiveRoute] = useState<string>("HomePage");
   const pages: NavBarProps[] = [
     { name: "Home", path: "/" },
@@ -24,6 +25,7 @@ const NavBarComponent = ({setOpenModal}:any) => {
     { name: "Blog", path: "/blog" },
     { name: "Contact Us", path: "/contactus" },
   ];
+  const [openModal, setOpenModal] = useState<boolean>(false);
 
   return (
     <>
@@ -53,12 +55,13 @@ const NavBarComponent = ({setOpenModal}:any) => {
             padding="p-2"
             bgColor="bg-black"
             width=""
-            onClick={()=>setOpenModal(true)}
+            onClick={() => setOpenModal(true)}
           />
         </div>
         <div className="xl:hidden text-4xl">
           <GiHamburgerMenu />
         </div>
+        {openModal && <NavBarModal setOpenModal={setOpenModal} />}
       </div>
     </>
   );

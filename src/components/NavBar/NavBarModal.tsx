@@ -2,7 +2,7 @@ import { MdCancel } from "react-icons/md";
 // import Brand from "../assets/brand.png";
 
 interface NavBarProps {
-  setOpenModal: () => void;
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const NavBarModal = ({ setOpenModal }: NavBarProps) => {
@@ -13,11 +13,9 @@ const NavBarModal = ({ setOpenModal }: NavBarProps) => {
     >
       <div className="bg-white rounded-2xl p-6">
         <div className="flex items-center justify-center">
-          <h1>
-            {/* <img src={Brand} /> */}
-          </h1>
+          <h1>{/* <img src={Brand} /> */}</h1>
         </div>
-        {/* <MdCancel onClick={() => setOpenModal(false)} /> */}
+        <MdCancel onClick={() => setOpenModal(false)} />
       </div>
     </div>
   );

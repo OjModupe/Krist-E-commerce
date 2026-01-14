@@ -1,9 +1,9 @@
 import type { ReactElement } from "react";
 import PM from "../../assets/PM.jpg";
 import PM2 from "../../assets/PM2.jpeg";
-import { BiStar } from "react-icons/bi";
+// import { BiStar } from "react-icons/bi";
 import { CiStar } from "react-icons/ci";
-import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
+// import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
 import { PiLineVertical } from "react-icons/pi";
 import Button from "../../Shared/Button";
 

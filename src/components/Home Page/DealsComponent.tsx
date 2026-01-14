@@ -1,4 +1,4 @@
-import Button from "../../Shared/Button";
+
 import IM1 from "../../assets/IM1.jpg";
 
 interface DealsProps {

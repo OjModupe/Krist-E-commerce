@@ -1,5 +1,5 @@
-import React from 'react'
-import LeftProduct from '../components/CartComponents.tsx/leftproducts'
+// import React from 'react'
+import LeftProduct from '../components/CartComponents.tsx/LeftProducts'
 import TotalPayment from '../components/CartComponents.tsx/TotalPayment'
 
 const Cart = () => {

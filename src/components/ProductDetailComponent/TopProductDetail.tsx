@@ -1,26 +1,26 @@
 import { MdKeyboardArrowRight } from "react-icons/md";
-import CI1 from "../../assets/CategoryImage1.png";
-import { FaStar } from "react-icons/fa6";
-import { useState, type ReactElement } from "react";
+// import CI1 from "../../assets/CategoryImage1.png";
+// import { FaStar } from "react-icons/fa6";
+import { useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { PiMinus, PiPlus } from "react-icons/pi";
 import Button from "../../Shared/Button";
-import { GiLoveHowl } from "react-icons/gi";
+// import { GiLoveHowl } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Modal from "../../Shared/Modal";
 
 
-interface Details {
-  name: string;
-  description: string;
-  icon: ReactElement;
-  currentPrice: string;
-  discountedPrice: string;
-  colors: string[];
-  size: string[];
-  image: string;
-}
+// interface Details {
+//   name: string;
+//   description: string;
+//   icon: ReactElement;
+//   currentPrice: string;
+//   discountedPrice: string;
+//   colors: string[];
+//   size: string[];
+//   image: string;
+// }
 
 const TopProductDetail = () => {
   const { id } = useParams();

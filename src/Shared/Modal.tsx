@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import type { ReactElement } from "react";
+// import type { ReactElement } from "react";
 import { RxCross2 } from "react-icons/rx";
 
 interface ModalProps {

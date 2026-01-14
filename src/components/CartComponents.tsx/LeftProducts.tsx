@@ -4,7 +4,7 @@ import BS2 from "../../assets/BS2.png";
 import BS3 from "../../assets/BS3.png";
 import BS5 from "../../assets/BS5.png";
 import { type ReactElement } from "react";
-import { FiFileMinus, FiFilePlus, FiMinus, FiPlus } from "react-icons/fi";
+import {  FiMinus, FiPlus } from "react-icons/fi";
 
 interface LeftProductProps {
   image: string;
