@@ -59,17 +59,23 @@ const LogInComponent = () => {
               <p>Remember me</p>
             </div>
 
-            <p>Forgot Password?</p>
+            <div>
+              <Link to="/forgotpassword">
+                <p>Forgot Password?</p>
+              </Link>
+            </div>
           </div>
           <div className=" mt-5 flex gap-4 flex-col ">
-            <Button
-              text="Log In"
-              color="text-white"
-              borderRadius="rounded-lg"
-              padding="p-3"
-              bgColor="bg-black"
-              width="w-full"
-            />
+            <Link to="/login">
+              <Button
+                text="Log In"
+                color="text-white"
+                borderRadius="rounded-lg"
+                padding="p-3"
+                bgColor="bg-black"
+                width="w-full"
+              />
+            </Link>
           </div>
         </div>
       </div>
