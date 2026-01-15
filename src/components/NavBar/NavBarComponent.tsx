@@ -36,7 +36,7 @@ const NavBarComponent = () => {
           </h1>
         </div>
 
-        <div className="xl:flex gap-7 hidden bg-green-400">
+        <div className="xl:flex gap-7 hidden">
           {pages.map((item) => (
             <Link to={item.path} key={item.name} className={` `}>
               <div className="flex gap-2 items-center">
