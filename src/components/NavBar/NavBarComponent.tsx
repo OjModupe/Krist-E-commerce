@@ -36,10 +36,15 @@ const NavBarComponent = () => {
           </h1>
         </div>
 
-        <div className="xl:flex gap-7 hidden">
+        <div className="xl:flex gap-7 hidden bg-green-400">
           {pages.map((item) => (
             <Link to={item.path} key={item.name} className={` `}>
-              {item.name}
+              <div className="flex gap-2 items-center">
+                <h1>{item.name}</h1>
+                <div className="text-2xl" onClick={() => setOpenModal(true)}>
+                  {item.icon}
+                </div>
+              </div>
             </Link>
           ))}
         </div>
@@ -48,21 +53,24 @@ const NavBarComponent = () => {
           <IoSearchOutline className="text-2xl" />
           <BiLike className="text-2xl" />
           <HiOutlineShoppingBag className="text-2xl" />
-          <Button
-            text="Login"
-            color="text-white"
-            borderRadius="rounded-lg"
-            padding="p-2"
-            bgColor="bg-black"
-            width=""
-            onClick={() => setOpenModal(true)}
-          />
+          <Link to="/login">
+            <Button
+              text="Login"
+              color="text-white"
+              borderRadius="rounded-lg"
+              padding="p-2"
+              bgColor="bg-black"
+              width=""
+              // onClick={() => setOpenModal(true)}
+            />
+          </Link>
         </div>
         <div className="xl:hidden text-4xl">
           <GiHamburgerMenu />
         </div>
-        {openModal && <NavBarModal setOpenModal={setOpenModal} />}
       </div>
+
+      {openModal && <NavBarModal setOpenModal={setOpenModal} />}
     </>
   );
 };

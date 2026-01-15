@@ -1,12 +1,11 @@
-import NavBarComponent from "../components/NavBar/NavBarComponent"
-
+import NavBarComponent from "../components/NavBar/NavBarComponent";
 
 const navbar = () => {
   return (
     <div>
-<NavBarComponent/>      
+      <NavBarComponent />
     </div>
-  )
-}
+  );
+};
 
-export default navbar
+export default navbar;
