@@ -17,7 +17,6 @@ const GenerateOtp = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="absolute h-screen w-full"></div>
       <div className="basis-50% w-full h-full bg-gray-300 overflow-hidden hidden md:block">
         <img src={OTP} className="h-full w-full object-cover object-center" />
       </div>
