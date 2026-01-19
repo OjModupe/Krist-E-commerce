@@ -9,6 +9,7 @@ interface OtpModalProps {
 const OtpModal = ({ setOtpModal }: OtpModalProps) => {
   return (
     <div className="bg-white rounded-2xl p-4 absolute left-[30%] top-[30%] z-50">
+      <div className=" absolute h-screen w-full bg-black opacity-40"></div>
       <div className="flex gap-33 items-center">
         <div className="">
           <MdCancel className="text-2xl" onClick={() => setOtpModal(false)} />
